@@ -1,0 +1,130 @@
+Level 1 of 32 
+Select the plates
+plate
+
+Level 2 of 32 
+Select the bento boxes
+bento
+
+Level 3 of 32
+Select the fancy plate
+#fancy
+
+Level 4 of 32 
+Select the apple on the plate
+plate apple
+
+Level 5 of 32 
+Select the pickle on the fancy plate
+#fancy pickle
+
+Level 6 of 32
+Select the small apples
+.small
+
+Level 7 of 32 
+Select the small oranges
+orange.small
+
+Level 8 of 32 
+Select the small oranges in the bentos
+bento orange.small
+
+Level 9 of 32 
+Select all the plates and bentos
+plate,bento
+
+Level 10 of 32
+Select all the things!
+*
+
+Level 11 of 32 
+Select everything on a plate
+plate *
+
+Level 12 of 32 
+Select every apple that's next to a plate
+plate + apple
+
+Level 13 of 32 
+Select the pickles beside the bento
+bento ~ pickle
+
+Level 14 of 32 
+Select the apple directly on a plate
+plate > apple
+
+Level 15 of 32
+Select the top orange
+orange:first-child
+
+Level 16 of 32
+Select the apple and the pickle on the plates
+plate apple:only-child, plate pickle:only-child
+
+Level 17 of 32 
+Select the small apple and the pickle
+apple:last-child, pickle:last-child
+
+Level 18 of 32 
+Select the 3rd plate
+plate:nth-child(3)
+
+Level 19 of 32
+Select the 1st bento
+bento:nth-last-child(3)
+
+Level 20 of 32
+Select first apple
+apple:first-of-type
+
+
+Level 21 of 32
+Select all even plates
+plate:nth-of-type(even)
+
+Level 22 of 32 
+Select every 2nd plate, starting from the 3rd
+plate:nth-of-type(2n+3)
+
+
+Level 23 of 32
+Select the apple on the middle plate
+plate apple:only-of-type
+
+Level 24 of 32
+Select the last apple and orange
+orange:last-of-type, apple:last-of-type
+
+Level 25 of 32 
+Select the empty bentos
+bento:empty
+
+Level 26 of 32 
+Select the big apples
+apple:not(.small)
+
+Level 27 of 32 
+Select the items for someone
+[for]
+
+Level 28 of 32 
+Select the plates for someone
+plate[for]
+
+Level 29 of 32 
+Select Vitaly's meal
+bento[for='Vitaly']
+
+Level 30 of 32 
+Select the items for names that start with 'Sa'
+[for^='Sa']
+
+Level 31 of 32 
+Select the items for names that end with 'ato'
+[for$='ato']
+
+Level 32 of 32 
+Select the meals for names that contain 'obb'
+[for*='obb']
+   
