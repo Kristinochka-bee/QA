@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.3.1'  // подтягивает драйверы
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+//подтягивает методы. Основа на кот пишется тест
+    implementation group: 'org.testng', name: 'testng', version: '7.1.0' //подтягивает методы,которых нет в селениуме
+    implementation 'com.github.javafaker:javafaker:1.0.2'  // будет делать рандомные данные
+    implementation group: 'com.fasterxml.uuid', name: 'java-uuid-generator', version: '3.1.0'
+    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '5.3.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'
+    testImplementation 'org.projectlombok:lombok:1.18.22'
+
+// для серелизации, вспомогательная библиотека для рест ашурид
+    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
